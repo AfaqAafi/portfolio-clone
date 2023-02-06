@@ -1,0 +1,38 @@
+.experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vh;
+    margin-bottom: 8rem;
+}
+.achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.circle{
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle::before{
+    position: absolute;
+    content: '';
+    left: -8px;
+    right: -8px;
+    top: -8px;
+    bottom: -8px;
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    z-index: -1;
+    border-radius: 100%;
+    box-shadow: var(--boxShadow);
+}
